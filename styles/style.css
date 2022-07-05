@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+html {
+  font-family: 'Hind', sans-serif;
+}
+
+html .navbar {
+  display: inline-block;
+}
+
+html .navbar .search-box {
+  border-radius: 100px;
+  background-color: #ECECEC;
+}
+
+html .navbar .search-box .search-placeholder {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  opacity: 60%;
+}
+
+html .navbar .nav-menu {
+  opacity: 60%;
+}
+
+html .posts .head-post-wrapper .head-post-content .author .position {
+  opacity: 60%;
+}
+/*# sourceMappingURL=style.css.map */
