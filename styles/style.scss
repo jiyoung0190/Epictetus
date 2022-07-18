@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 
-html{
+body{
     font-family: 'Hind', sans-serif;
 
     .navbar{
-        display: inline-block;
+        display: inline;
 
         .search-box{
             border-radius: 100px;
+            max-height: 40px;
+            width: 224px;
             background-color: #ECECEC;
 
             .search-placeholder{
+                margin: auto;
                 border: none;
                 background-color: transparent;
                 resize: none;
@@ -27,9 +30,16 @@ html{
     .posts{
         .head-post-wrapper{
             .head-post-content{
+                .main-title{
+                    h1{
+                        font-weight: 400;
+                        font-size: 24px;
+                        border: 1px solid aqua;
+                    } 
+                }
                 .author{
                     .position{
-                        opacity: 60%;
+                        opacity: 50%;
                     }
                 }
             } 

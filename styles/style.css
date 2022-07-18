@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
-html {
+body {
   font-family: 'Hind', sans-serif;
 }
 
-html .navbar {
-  display: inline-block;
+body .navbar {
+  display: inline;
 }
 
-html .navbar .search-box {
+body .navbar .search-box {
   border-radius: 100px;
+  max-height: 40px;
+  width: 224px;
   background-color: #ECECEC;
 }
 
-html .navbar .search-box .search-placeholder {
+body .navbar .search-box .search-placeholder {
+  margin: auto;
   border: none;
   background-color: transparent;
   resize: none;
@@ -20,11 +23,17 @@ html .navbar .search-box .search-placeholder {
   opacity: 60%;
 }
 
-html .navbar .nav-menu {
+body .navbar .nav-menu {
   opacity: 60%;
 }
 
-html .posts .head-post-wrapper .head-post-content .author .position {
-  opacity: 60%;
+body .posts .head-post-wrapper .head-post-content .main-title h1 {
+  font-weight: 400;
+  font-size: 24px;
+  border: 1px solid aqua;
+}
+
+body .posts .head-post-wrapper .head-post-content .author .position {
+  opacity: 50%;
 }
 /*# sourceMappingURL=style.css.map */
