@@ -1,39 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
 body {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
 }
-
 body .navbar {
-  display: inline;
+  display: flex;
 }
-
-body .navbar .search-box {
+body .navbar .search-container {
   border-radius: 100px;
   max-height: 40px;
   width: 224px;
   background-color: #ECECEC;
 }
-
-body .navbar .search-box .search-placeholder {
-  margin: auto;
+body .navbar .search-container .search-bar .magnifier {
+  padding: 15px 194px 15px 19px;
+  float: left;
+}
+body .navbar .search-container .search-bar .search-placeholder {
+  padding: 9px 128px 5px 49px;
+  font-size: 16px;
   border: none;
   background-color: transparent;
   resize: none;
   outline: none;
   opacity: 60%;
 }
-
-body .navbar .nav-menu {
+body .navbar .nav-menu > ul {
+  display: flexbox;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   opacity: 60%;
 }
-
 body .posts .head-post-wrapper .head-post-content .main-title h1 {
   font-weight: 400;
   font-size: 24px;
   border: 1px solid aqua;
 }
-
 body .posts .head-post-wrapper .head-post-content .author .position {
   opacity: 50%;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

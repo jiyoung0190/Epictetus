@@ -5,26 +5,38 @@ body{
     font-family: 'Hind', sans-serif;
 
     .navbar{
-        display: inline;
+        display: flex;
 
-        .search-box{
+        .search-container{
             border-radius: 100px;
             max-height: 40px;
             width: 224px;
             background-color: #ECECEC;
 
-            .search-placeholder{
-                margin: auto;
-                border: none;
-                background-color: transparent;
-                resize: none;
-                outline: none;
-                opacity: 60%;
+            .search-bar{
+                .magnifier{
+                    padding: 15px 194px 15px 19px;
+                    float:left;
+                }
+                .search-placeholder{
+                    padding: 9px 128px 5px 49px;
+                    font-size: 16px;
+                    border: none;
+                    background-color: transparent;
+                    resize: none;
+                    outline: none;
+                    opacity: 60%;  
+                }
             }
         }
 
-        .nav-menu{
+        .nav-menu > ul{
+            display: flexbox;
+            margin: 0;
+            padding: 0;
+            list-style: none;
             opacity: 60%;
+            
         }
     }
     .posts{
