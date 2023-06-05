@@ -3,44 +3,136 @@
 
 body{
     font-family: 'Hind', sans-serif;
+    width: 80%;
+    margin: auto;
 
-    .navbar{
-        display: flex;
-
-        .search-container{
-            border-radius: 100px;
-            max-height: 40px;
-            width: 224px;
-            background-color: #ECECEC;
-
-            .search-bar{
-                .magnifier{
-                    padding: 15px 194px 15px 19px;
-                    float:left;
+    header{
+        
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+    
+            .logo-container{
+                display: flex; 
+                align-items: center;
+    
+                .logo-img{
+                    padding: 20px 0px 0px;
+                    display: block;
+                    transition: transform 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
                 }
-                .search-placeholder{
-                    padding: 9px 128px 5px 49px;
-                    font-size: 16px;
-                    border: none;
-                    background-color: transparent;
-                    resize: none;
-                    outline: none;
-                    opacity: 60%;  
+                
+                a{
+                    margin: 0;
+                    transition: transform 0.3s ease-in-out;
+                    &:link{
+                        color:#121212;
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        color: #121212;
+                        font-size: 1.3em;
+                        transform: scale(1.1, 1.1);
+                    }
+                    &:visited{
+                        color: #121212;
+                    }
+                    .website-name{
+                        margin: 0;
+                        font-size: 20px;
+                        transition: 0.3s;
+                    }
+                }
+                }
+                
+            }
+            .nav-menu{
+                max-width: 500px;
+                max-height: 50px;
+                font-size: 18px;
+    
+                ul{
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    gap: 0.8rem;
+    
+                    li{
+                            margin: 0px 10px 0px 0px;
+                            list-style: none;
+                            text-decoration: none;
+                            width: 90px; 
+                        a{  
+                            transition: 0.3s;
+                            &:link{
+                                color:#121212;
+                                text-decoration: none;
+                                transform: scale(1.1, 1.1);
+                            }
+                            &:hover{
+                                color: #121212;
+                                font-size: 1.1em;
+                            }
+                            &:visited{
+                                color: #121212;
+                            }
+                        }
+                    }
+                        
+                }
+               
+            }
+            .search-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                max-height: 40px;
+                max-width: 224px;
+                margin: 10px 80px 0 0;
+                background-color: #ECECEC;
+                flex-shrink: 0;
+                transition: transform 0.3s ease-in-out;
+                    &:hover{
+                        text-decoration: none;
+                        transform: scale(1.1, 1.1);
+                    }
+    
+                .search-bar{
+                    display: flex;
+                    justify-content: center;
+                    
+                    .magnifier{
+                        padding: 20px 0 20px 35px;
+                    }
+                    .search-placeholder{
+                        padding: 0 0 0 10px;
+                        font-size: 16px;
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                        opacity: 60%;  
+                    }
                 }
             }
-        }
-
-        .nav-menu > ul{
-            display: flexbox;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            opacity: 60%;
+    
             
         }
+
     }
+       
     .posts{
         .head-post-wrapper{
+            .main-image{
+                max-width: 100%;
+                height: auto;
+            }
             .head-post-content{
                 .main-title{
                     h1{
@@ -57,5 +149,3 @@ body{
             } 
         }
     }
-
-}

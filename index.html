@@ -9,28 +9,32 @@
     <title>Epictetus - Home</title>
 </head>
 <body>
-    <!-- NAVIGATION BAR -->
-    <div class="navbar">
-        <div class="logo">
-            <img src="./images/logo.svg" alt="logo_img">
-        </div>
-        <div class="search-container">
-            <form class="search-bar" action="">
-                <button class="magnifier">
-                    <img src="./images/search.svg" alt="search_img">
-                <button>
-                <input class="search-placeholder" type="text" placeholder="Search">
-            </form>
+    <div class="content-wrapper">
+        <!-- NAVIGATION BAR -->
+    <header>
+        <nav>
+        <div class="logo-container">
+            <a href="#"><img class="logo-img" src="./images/logo.svg" alt="logo_img"></a>
+            <a href="#"><h1 class="website-name">Epictetus</h1><a/>
         </div>
         <div class="nav-menu">
             <ul>
-                <li>UI Design</li>
-                <li>Front-end</li>
-                <li>Back-end</li>
-                <li>Lainnya</li> <!-- the dropdown menu is required-->
+                <li><a href="#">UI Design</a></li>
+                <li><a href="#">Front-end</a></li>
+                <li><a href="#">Back-end</a></li>
+                <li><a href="#">Lainnya</a></li> <!-- the dropdown menu is required-->
             </ul>
         </div>
-    </div>
+        <div class="search-container">
+            <form class="search-bar" action="">
+                <img class="magnifier" src="./images/search.svg" alt="search_img">
+                <input class="search-placeholder" type="text" placeholder="Search">
+            </form>
+        </div>
+        
+    </nav>
+    </header>
+    
     <!-- MAIN SECTION-->
     <div class="posts">
         <div class="head-post-wrapper">
@@ -54,8 +58,13 @@
                     <div class="author-name">Leslie Alexander</div>
                     <div class="position">UI Designer</div>
                 </div>
-        </div>
+                <div class="posts-wrapper">
+                    <div class="post1">
+                        <div class="image"></div>
+                        <div class="content"></div>
+                    </div>
+                </div>
     </div>
-
+    
 </body>
 </html>
